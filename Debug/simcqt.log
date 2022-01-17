@@ -1,0 +1,6 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (debug\) contains files shared from another project (simc.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  MOC qt\simulationcraftqt.h
+  The system cannot find the path specified.
+  Compiling simcqt..res using MOC
+  The system cannot find the path specified.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(238,5): error MSB8066: Custom build for 'qt\simulationcraftqt.h;debug\simcqt.res' exited with code 3.

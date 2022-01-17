@@ -1,0 +1,6 @@
+^E:\WOTLK\WOW - WOTLK (MODERN TEXTURES)\SIMC BAK\SIMC\QT\SIMULATIONCRAFTQT.H
+Rem IncrediBuild_AllowRemote
+Rem IncrediBuild_OutputFile debug\moc_simulationcraftqt.cpp
+C:\Qt\4.6.2\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\Qt\4.6.2\include\QtCore" -I"..\Qt\4.6.2\include\QtGui" -I"..\Qt\4.6.2\include\QtWebKit" -I"..\Qt\4.6.2\include" -I"engine" -I"..\Qt\4.6.2\include\ActiveQt" -I"debug" -I..\Qt\4.6.2\mkspecs\default -D_MSC_VER=1500 -DWIN32 qt\simulationcraftqt.h -o debug\moc_simulationcraftqt.cpp
+^E:\WOTLK\WOW - WOTLK (MODERN TEXTURES)\SIMC BAK\SIMC\DEBUG\SIMCQT.RES
+\bin\moc.exe "E:\WotLK\WoW - WotLK (Modern Textures)\simc bak\Simc\debug\simcqt.res" -o "E:\WotLK\WoW - WotLK (Modern Textures)\simc bak\Simc\debug\moc_simcqt.cpp"

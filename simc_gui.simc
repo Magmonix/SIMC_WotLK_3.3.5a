@@ -1,0 +1,114 @@
+patch=3.3.3
+queue_lag=0.075  gcd_lag=0.150  channel_lag=0.250
+iterations=1000
+max_time=300
+vary_combat_length=0.0
+target_adds=0
+target_race=humanoid
+default_skill=1.0
+threads=1
+smooth_rng=0
+optimal_raid=0
+override.focus_magic=0
+override.heroic_presence=0
+override.strength_of_earth=1
+override.blessing_of_might=1
+override.trueshot_aura=1
+override.bloodlust=1
+override.sanctified_retribution=1
+override.swift_retribution=1
+override.arcane_brilliance=1
+override.blessing_of_wisdom=1
+override.leader_of_the_pack=1
+override.windfury_totem=1
+override.replenishment=1
+override.moonkin_aura=1
+override.wrath_of_air=1
+override.totem_of_wrath=1
+override.divine_spirit=1
+override.fortitude=1
+override.mark_of_the_wild=1
+override.blessing_of_kings=1
+override.sunder_armor=1
+override.faerie_fire=1
+override.thunder_clap=1
+override.insect_swarm=1
+override.mangle=1
+override.bleeding=1
+override.master_poisoner=1
+override.crypt_fever=1
+override.judgement_of_wisdom=1
+override.blood_frenzy=1
+override.poisoned=1
+override.hunters_mark=1
+override.improved_scorch=1
+override.earth_and_moon=1
+override.misery=1
+calculate_scale_factors=1
+scale_only=none
+dps_plot_stat=none
+#!./simc 
+
+rogue=magmonix
+origin="E:\WotLK\WoW - WotLK (Modern Textures)\Rawr\Rawr.v2.3.23-RetailFixed.v2\Magmonix Slow MH.xml"
+level=80
+race=orc
+use_pre_potion=-1
+talents=http://www.wowarmory.com/talent-calc.xml?cid=4&tal=00530300535210052010333105100500500500300000000000000002000000000000000000000000000
+glyphs=mutilate/hunger_for_blood/tricks_of_the_trade
+actions=flask,type=endless_rage
+actions+=/food,type=mega_mammoth_meal
+actions+=/apply_poison,off_hand=instant,main_hand=deadly
+actions+=/speed_potion,if=!in_combat|buff.bloodlust.react|target.time_to_die<20
+actions+=/auto_attack
+actions+=/snapshot_stats
+actions+=/stealth
+actions+=/kick
+actions+=/blood_fury
+actions+=/pool_energy,for_next=1
+actions+=/hunger_for_blood,if=buff.hunger_for_blood.remains<2
+actions+=/slice_and_dice,if=buff.slice_and_dice.remains<1
+actions+=/cold_blood,sync=envenom
+actions+=/envenom,if=buff.combo_points.stack>=4&buff.envenom.down
+actions+=/envenom,if=buff.combo_points.stack>=4&energy>90
+actions+=/envenom,if=buff.combo_points.stack>=2&buff.slice_and_dice.remains<2
+actions+=/tricks_of_the_trade
+actions+=/mutilate,if=buff.combo_points.stack<4
+actions+=/vanish,if=time>30&energy>50
+head=helm_of_the_vast_legions,stats=7agi_11armor_6crit_7haste_7int_13sta,gems=austere_earthsiege_1haste,enchant=50ap_20crit
+neck=collar_of_dissolution,stats=3agi_3crit_7haste_7sta
+shoulders=spaulders_of_resumed_battle,stats=7agi_10armor_6crit_6haste_7int_11sta,enchant=40ap_15crit
+chest=heroes_bonescythe_breastplate,stats=7agi_13armor_6crit_7haste_7int_13sta,gems=1haste_1agi,enchant=10str_10agi_10sta_10int_10spi
+waist=treasure_seekers_belt,stats=7agi_8armor_7crit_7int_10sta,gems=1haste_1haste
+legs=heroes_bonescythe_legplates,stats=8agi_12armor_6crit_7haste_8int_14sta,gems=1crit_1dodge_2crit,enchant=75ap_22crit
+feet=boots_of_the_worshiper,stats=7agi_9armor_6crit_7haste_7int_9sta,enchant=32ap
+wrists=advanced_tooledleather_bands,stats=5agi_6armor_7haste_5int_7sta,enchant=50ap
+hands=giltedged_leather_gauntlets,stats=7agi_8armor_10crit_7int_10sta,enchant=44ap
+finger1=stainedglass_shard_ring,stats=3agi_9haste_9sta
+finger2=hemorrhaging_circle,stats=5agi_5haste_7sta
+trinket1=loathebs_shadow,stats=13crit
+trinket2=mirror_of_truth,stats=13crit,equip=onattackcrit_1000ap_10%_10dur_50cd
+back=cloak_of_darkening,stats=3agi_4armor_3crit_6haste_9sta,enchant=22agi
+main_hand=omen_of_ruin,stats=3agi_4crit_3haste_8sta,enchant=berserking,weapon=dagger_1.80speed_6min_11max
+off_hand=anarchy,stats=3agi_3crit_4haste_8sta,enchant=berserking,weapon=dagger_1.80speed_6min_11max
+ranged=accursed_bow_of_the_elite,stats=9agi_7crit_10haste_12sta,weapon=bow_3.00speed_16min_23max
+# Gear Summary
+# gear_strength=10
+# gear_agility=117
+# gear_stamina=189
+# gear_intellect=65
+# gear_spirit=10
+# gear_attack_power=291
+# gear_crit_rating=153
+# gear_haste_rating=89
+# gear_armor=81
+# gear_dodge_rating=1
+# meta_gem=austere_earthsiege
+# tier7_2pc_melee=1
+# main_hand=omen_of_ruin,weapon=dagger_1.80speed_6min_11max,enchant=berserking
+# off_hand=anarchy,weapon=dagger_1.80speed_6min_11max,enchant=berserking
+# ranged=accursed_bow_of_the_elite,weapon=bow_3.00speed_16min_23max
+
+# User-specified persistent global and player parms will set here.
+
+
