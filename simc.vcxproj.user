@@ -4,4 +4,8 @@
     <LocalDebuggerCommandArguments>simc.exe rawr=c:\Users\Magmonix\Desktop\MyCharacter.xml</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerCommandArguments>iterations=5000 html=C:\Users\Magmonix\Documents\test.html rawr=C:\Users\Magmonix\Documents\Catbeartree.xml optimal_raid=1</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
 </Project>

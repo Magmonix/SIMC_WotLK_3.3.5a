@@ -1,7 +1,57 @@
-﻿  sc_warlock.cpp
+﻿  sc_action.cpp
+  sc_armory.cpp
+  sc_attack.cpp
+  sc_buff.cpp
+  sc_chart.cpp
+  sc_consumable.cpp
+  sc_death_knight.cpp
+  sc_druid.cpp
+  sc_enchant.cpp
+  sc_event.cpp
+  sc_expressions.cpp
+  sc_gear_stats.cpp
+  sc_http.cpp
+  sc_hunter.cpp
+  sc_item.cpp
+  sc_js.cpp
+  sc_log.cpp
+  sc_mage.cpp
+  sc_main.cpp
+  sc_mmo_champion.cpp
+E:\WotLK\WoW - WotLK (Modern Textures)\SIMC\Simc\engine\sc_mmo_champion.cpp(327,20): warning C4018: '<': signed/unsigned mismatch
+  Compiling...
+  sc_option.cpp
+  sc_paladin.cpp
+  sc_pet.cpp
+  sc_player.cpp
+  sc_plot.cpp
+  sc_priest.cpp
+  sc_raid_event.cpp
+  sc_rating.cpp
+  sc_rawr.cpp
+  sc_report.cpp
+  sc_rng.cpp
+  sc_rogue.cpp
+  sc_scaling.cpp
+  sc_sequence.cpp
+  sc_set_bonus.cpp
+  sc_shaman.cpp
+  sc_sim.cpp
+  sc_spell.cpp
+  sc_stats.cpp
+  sc_target.cpp
+  Compiling...
+  sc_thread.cpp
+  sc_unique_gear.cpp
+  sc_util.cpp
+E:\WotLK\WoW - WotLK (Modern Textures)\SIMC\Simc\engine\sc_util.cpp(1109,20): warning C4018: '<': signed/unsigned mismatch
+  sc_warlock.cpp
+  sc_warrior.cpp
+  sc_weapon.cpp
+  sc_wowhead.cpp
+  sc_xml.cpp
   Generating code
-  1 of 5874 functions (<0.1%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    62 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB not found, fall back to full compilation.
+  All 6017 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
-  simc.vcxproj -> E:\WotLK\WoW - WotLK (Modern Textures)\simc bak\Simc\Release\simc.exe
+  simc.vcxproj -> E:\WotLK\WoW - WotLK (Modern Textures)\SIMC\Simc\Release\simc.exe

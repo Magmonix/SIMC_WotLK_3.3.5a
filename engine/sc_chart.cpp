@@ -171,7 +171,7 @@ int chart_t::raid_dps( std::vector<std::string>& images,
   {
     if ( num_players > max_players ) num_players = max_players;
 
-    s = "http://chart.apis.google.com/chart?";
+    s = "https://chart.apis.google.com/chart?";
     snprintf( buffer, sizeof( buffer ), "chs=450x%d", num_players * 20 + 30 ); s += buffer;
     s += "&amp;";
     s += "cht=bhg";
@@ -268,7 +268,7 @@ int chart_t::raid_gear( std::vector<std::string>& images,
 
     if ( num_players <= 12 ) height += 70;
 
-    s = "http://chart.apis.google.com/chart?";
+    s = "https://chart.apis.google.com/chart?";
     snprintf( buffer, sizeof( buffer ), "chs=450x%d", height ); s += buffer;
     s += "&amp;";
     s += "cht=bhs";
@@ -372,7 +372,7 @@ const char* chart_t::raid_downtime( std::string& s,
 
   char buffer[ 1024 ];
 
-  s = "http://chart.apis.google.com/chart?";
+  s = "https://chart.apis.google.com/chart?";
   snprintf( buffer, sizeof( buffer ), "chs=500x%d", num_waiting * 30 + 30 ); s += buffer;
   s += "&amp;";
   s += "cht=bhg";
@@ -434,7 +434,7 @@ const char* chart_t::raid_timeline( std::string& s,
 
   char buffer[ 1024 ];
 
-  s = "http://chart.apis.google.com/chart?";
+  s = "https://chart.apis.google.com/chart?";
   s += "chs=525x130";
   s += "&amp;";
   s += "cht=bvs";
@@ -511,7 +511,7 @@ int chart_t::raid_dpet( std::vector<std::string>& images,
   {
     if ( num_stats > max_actions_per_chart ) num_stats = max_actions_per_chart;
 
-    s = "http://chart.apis.google.com/chart?";
+    s = "https://chart.apis.google.com/chart?";
     snprintf( buffer, sizeof( buffer ), "chs=500x%d", num_stats * 15 + 30 ); s += buffer;
     s += "&amp;";
     s += "cht=bhg";
@@ -594,7 +594,7 @@ const char* chart_t::action_dpet( std::string& s,
 
   char buffer[ 1024 ];
 
-  s = "http://chart.apis.google.com/chart?";
+  s = "https://chart.apis.google.com/chart?";
   snprintf( buffer, sizeof( buffer ), "chs=500x%d", num_stats * 30 + 65 ); s += buffer;
   s += "&amp;";
   s += "cht=bhg";
@@ -670,7 +670,7 @@ const char* chart_t::action_dmg( std::string& s,
 
   char buffer[ 1024 ];
 
-  s = "http://chart.apis.google.com/chart?";
+  s = "https://chart.apis.google.com/chart?";
   snprintf( buffer, sizeof( buffer ), "chs=500x%d", 200 + num_stats * 10 ); s += buffer;
   s += "&amp;";
   s += "cht=p";
@@ -735,7 +735,7 @@ const char* chart_t::gains( std::string& s,
 
   char buffer[ 1024 ];
 
-  s = "http://chart.apis.google.com/chart?";
+  s = "https://chart.apis.google.com/chart?";
   snprintf( buffer, sizeof( buffer ), "chs=550x%d", 200 + num_gains * 10 ); s += buffer;
   s += "&amp;";
   s += "cht=p";
@@ -805,7 +805,7 @@ const char* chart_t::scale_factors( std::string& s,
 
   char buffer[ 1024 ];
 
-  s = "http://chart.apis.google.com/chart?";
+  s = "https://chart.apis.google.com/chart?";
   snprintf( buffer, sizeof( buffer ), "chs=500x%d", num_scaling_stats * 30 + 30 ); s += buffer;
   s += "&amp;";
   s += "cht=bhg";
@@ -869,7 +869,7 @@ const char* chart_t::scaling_dps( std::string& s,
   
   char buffer[ 1024 ];
 
-  s = "http://chart.apis.google.com/chart?";
+  s = "https://chart.apis.google.com/chart?";
   s += "chs=600x300";
   s += "&amp;";
   s += "cht=lc";
@@ -964,7 +964,7 @@ const char* chart_t::timeline_dps( std::string& s,
 
   char buffer[ 1024 ];
 
-  s = "http://chart.apis.google.com/chart?";
+  s = "https://chart.apis.google.com/chart?";
   s += "chs=425x130";
   s += "&amp;";
   s += "cht=lc";
@@ -1031,7 +1031,7 @@ const char* chart_t::timeline_resource( std::string& s,
 
   char buffer[ 1024 ];
 
-  s = "http://chart.apis.google.com/chart?";
+  s = "https://chart.apis.google.com/chart?";
   s += "chs=425x150";
   s += "&amp;";
   s += "cht=lc";
@@ -1081,7 +1081,7 @@ const char* chart_t::distribution_dps( std::string& s,
 
   char buffer[ 1024 ];
 
-  s = "http://chart.apis.google.com/chart?";
+  s = "https://chart.apis.google.com/chart?";
   s += "chs=525x130";
   s += "&amp;";
   s += "cht=bvs";

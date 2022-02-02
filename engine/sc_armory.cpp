@@ -804,7 +804,8 @@ player_t* armory_t::download_player( sim_t* sim,
         sim -> errorf( "Player %s unable to parse talents '%s'.\n", p -> name(), talents_encoding.c_str() );
         return 0;
       }
-      p -> talents_str = "http://www.wowarmory.com/talent-calc.xml?cid=" + cid_str + "&tal=" + talents_encoding;
+      //p -> talents_str = "http://www.wowarmory.com/talent-calc.xml?cid=" + cid_str + "&tal=" + talents_encoding; 
+      p -> talents_str = "https://iradei.eu/talent-calculators/wotlk/" + p->type + '?' + talents_encoding;
 
       p -> glyphs_str = "";
       std::vector<xml_node_t*> glyph_nodes;

@@ -505,9 +505,10 @@ player_t* rawr_t::load_player( sim_t* sim,
     return 0;
   }
 
-  p -> talents_str = "http://www.wowarmory.com/talent-calc.xml?cid=";
-  p -> talents_str += util_t::class_id_string( p -> type );
-  p -> talents_str += "&tal=" + talents_encoding;
+  //p -> talents_str = "http://www.wowarmory.com/talent-calc.xml?cid=";
+  //p -> talents_str += util_t::class_id_string( p -> type );
+  //p -> talents_str += "&tal=" + talents_encoding;
+  p->talents_str = "https://iradei.eu/talent-calculators/wotlk/" + class_str + '\?' +talents_encoding;
 
   p -> glyphs_str = "";
   for ( int i=0; glyphs_encoding[ i ]; i++ )

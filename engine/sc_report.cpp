@@ -998,11 +998,11 @@ static void print_html_player( FILE* file, player_t* p )
 		   100.0 * p -> total_waiting / p -> total_seconds, 
 		   60.0 * p -> total_foreground_actions / p -> total_seconds  );
 
-  util_t::fprintf( file, 
-		   "<table class=\"player\">\n"
-		   "  <tr> <th>Origin</th> <td><a href=\"%s\">%s</a></td>\n"
-		   "</table><br />\n",
-		   p -> origin_str.c_str(), p -> origin_str.c_str() );
+//  util_t::fprintf( file, 
+//		   "<table class=\"player\">\n"
+//		   "  <tr> <th>Origin</th> <td><a href=\"%s\">%s</a></td>\n"
+//		   "</table><br />\n",
+//		   p -> origin_str.c_str(), p -> origin_str.c_str() );
 
   util_t::fprintf( file, 
 		   "<table class=\"player\">\n"
@@ -2006,7 +2006,7 @@ void report_t::print_html( sim_t* sim )
 
   int arch = 0, version = 0, revision = 0;
   sim -> patch.decode( &arch, &version, &revision );
-  util_t::fprintf( file, "<h1>SimulationCraft %s.%s for World of Warcraft release %d.%d.%d</h1>\n", SC_MAJOR_VERSION, SC_MINOR_VERSION, arch, version, revision );
+  //util_t::fprintf( file, "<h1>SimulationCraft %s.%s for World of Warcraft release %d.%d.%d</h1>\n", SC_MAJOR_VERSION, SC_MINOR_VERSION, arch, version, revision );
 
   time_t rawtime;
   time ( &rawtime );
